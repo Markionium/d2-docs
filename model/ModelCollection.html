@@ -1,0 +1,230 @@
+<body>
+    <md-toolbar md-scroll-shrink md-shrink-speed-factor="0.75" class="md-tall md-accent content-header md-whiteframe-z1">
+        <md-icon ng-show="app.showMenuButton()" ng-click="app.showMenu()" class="menu-icon" md-font-icon="fa fa-bars"></md-icon>
+        
+<h1>ModelCollection</h1>
+
+<span class="doc-module-name">model/ModelCollection</span>
+
+    </md-toolbar>
+    <md-content>
+        
+<div>
+    
+    <div class="content-block md-whiteframe-z1">
+    <md-toolbar class="md-theme-light">
+        <h2 class="md-toolbar-tools">
+            <span>Constructor</span>
+        </h2>
+    </md-toolbar>
+    <md-list>
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-function-name">ModelCollection(<span class="doc-function-parameter-wrap">modelDefinition <span class="type-hint type-hint-modeldefinition">ModelDefinition</span></span>, <span class="doc-function-parameter-wrap">values <span class="type-hint type-hint-model">Model[]</span></span>, <span class="doc-function-parameter-wrap">pagerData <span class="type-hint type-hint-object">Object</span></span>)</h3>
+                    <p><p>Creates a new <code>ModelCollection</code> object based on the passed <code>modelDefinition</code>. Additionally values can be added by passing
+<code>Model</code> objects in the <code>values</code> parameter. The collection also exposes a pager object which can be used to navigate through
+the pages in the collection. For more information see the <code>Pager</code> class.</p>
+</p>
+                    <ol class="docs-function-parameters">
+                        
+                        <li>
+                            <span class="docs-parameter-name">modelDefinition</span> <span class="type-hint type-hint-modeldefinition">ModelDefinition</span>
+                            <p><p>The <code>ModelDefinition</code> that this collection is for. This defines the type of models that
+are allowed to be added to the collection.</p>
+</p>
+                        </li>
+                        
+                        <li>
+                            <span class="docs-parameter-name">values</span> <span class="type-hint type-hint-model">Model[]</span>
+                            <p><p>Initial values that should be added to the collection.</p>
+</p>
+                        </li>
+                        
+                        <li>
+                            <span class="docs-parameter-name">pagerData</span> <span class="type-hint type-hint-object">Object</span>
+                            <p><p>Object with pager data. This object contains data that will be put into the <code>Pager</code> instance.</p>
+</p>
+                        </li>
+                        
+                    </ol>
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+    </md-list>
+    </div>
+    
+
+    
+    <div class="content-block md-whiteframe-z1">
+    <md-toolbar class="md-theme-light">
+        <h2 class="md-toolbar-tools">
+            <span>Methods</span>
+        </h2>
+    </md-toolbar>
+    <md-list>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-function-name">
+                        add(<span class="doc-function-parameter-wrap">value <span class="type-hint type-hint-model">Model</span></span>)
+                        
+                        
+                    </h3>
+
+                    <p><p>Adds a Model instance to the collection. The model is checked if it is a correct instance of <code>Model</code> and if it has
+a valid id. A valid id is a uid string of 11 alphanumeric characters.</p>
+</p>
+
+                    
+                    <div class="docs-function-returns">
+                        <h4>
+                            Returns <span class="type-hint type-hint-modelcollection">ModelCollection</span>
+                        </h4>
+                        <p><p>Returns itself for chaining purposes.</p>
+</p>
+                    </div>
+                    
+
+                    
+                    <div class="docs-function-exceptions">
+                        <h4>
+                            Exceptions
+                        </h4>
+                        <ul>
+                        
+                            <li><span class="type-hint type-hint-error">Error</span>: When the passed value is not an instance of `Model`</li>
+                        
+                            <li><span class="type-hint type-hint-error">Error</span>: Throws error when the passed value does not have a valid id.</li>
+                        
+                        </ul>
+                    </div>
+                    
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-function-name">
+                        toArray()
+                        
+                        
+                    </h3>
+
+                    <p><p>If working with the Map type object is inconvenient this method can be used to return the values
+of the collection as an Array object.</p>
+</p>
+
+                    
+                    <div class="docs-function-returns">
+                        <h4>
+                            Returns <span class="type-hint type-hint-array">Array</span>
+                        </h4>
+                        <p><p>Returns the values of the collection as an array.</p>
+</p>
+                    </div>
+                    
+
+                    
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-function-name">
+                        clear()
+                        
+                        
+                    </h3>
+
+                    <p><p>Clear the collection and remove all it&#39;s values.</p>
+</p>
+
+                    
+                    <div class="docs-function-returns">
+                        <h4>
+                            Returns <span class="type-hint type-hint-this">this</span>
+                        </h4>
+                        <p><p>Returns itself for chaining purposes;</p>
+</p>
+                    </div>
+                    
+
+                    
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+    </md-list>
+    </div>
+    
+
+    
+    <div class="content-block md-whiteframe-z1">
+    <md-toolbar class="md-theme-light">
+        <h2 class="md-toolbar-tools">
+            <span>Properties</span>
+        </h2>
+    </md-toolbar>
+    <md-list>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-property-name">modelDefinition <span class="type-hint type-hint-modeldefinition">ModelDefinition</span></h3>
+
+                    <p><p>The <code>ModelDefinition</code> that this collection is for. This defines the type of models that
+are allowed to be added to the collection.</p>
+</p>
+                    <p></p>
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-property-name">pager <span class="type-hint type-hint-pager">Pager</span></h3>
+
+                    <p><p>Pager object that is created from the pagerData that was passed when the collection was constructed. If no pager data was present
+the pager will have default values.</p>
+</p>
+                    <p></p>
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-property-name">size <span class="type-hint type-hint-number">Number</span></h3>
+
+                    <p><p>The number of Model objects that are in the collection.</p>
+</p>
+                    <p><p>Contains the number of Model objects that are in this collection. If the collection is a collection with a pager. This
+does not take into account all the items in the database. Therefore when a pager is present on the collection
+the size will return the items on that page. To get the total number of items consult the pager.</p>
+</p>
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+    </md-list>
+    </div>
+    
+</div>
+
+    </md-content>
+</body>

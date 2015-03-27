@@ -1,0 +1,284 @@
+<body>
+    <md-toolbar md-scroll-shrink md-shrink-speed-factor="0.75" class="md-tall md-accent content-header md-whiteframe-z1">
+        <md-icon ng-show="app.showMenuButton()" ng-click="app.showMenu()" class="menu-icon" md-font-icon="fa fa-bars"></md-icon>
+        
+<h1>Pager</h1>
+
+<span class="doc-module-name">pager/Pager</span>
+
+    </md-toolbar>
+    <md-content>
+        
+<div>
+    
+    <div class="content-block md-whiteframe-z1">
+    <md-toolbar class="md-theme-light">
+        <h2 class="md-toolbar-tools">
+            <span>Constructor</span>
+        </h2>
+    </md-toolbar>
+    <md-list>
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-function-name">Pager(<span class="doc-function-parameter-wrap">pager <span class="type-hint type-hint-object">Object</span></span>, <span class="doc-function-parameter-wrap">pagingHandler <span class="type-hint type-hint-object">Object</span></span>)</h3>
+                    <p><p>Returns a newly created pager object with methods to navigate pages.</p>
+</p>
+                    <ol class="docs-function-parameters">
+                        
+                        <li>
+                            <span class="docs-parameter-name">pager</span> <span class="type-hint type-hint-object">Object</span>
+                            <p><p>Paging information object.</p>
+</p>
+                        </li>
+                        
+                        <li>
+                            <span class="docs-parameter-name">pagingHandler</span> <span class="type-hint type-hint-object">Object</span>
+                            <p><p>Paging handler object. The requirement for this object is that it has a list method.</p>
+</p>
+                        </li>
+                        
+                    </ol>
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+    </md-list>
+    </div>
+    
+
+    
+    <div class="content-block md-whiteframe-z1">
+    <md-toolbar class="md-theme-light">
+        <h2 class="md-toolbar-tools">
+            <span>Methods</span>
+        </h2>
+    </md-toolbar>
+    <md-list>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-function-name">
+                        hasNextPage Check whether there is a next page.()
+                        
+                        
+                    </h3>
+
+                    <p></p>
+
+                    
+                    <div class="docs-function-returns">
+                        <h4>
+                            Returns <span class="type-hint type-hint-boolean">Boolean</span>
+                        </h4>
+                        <p><p>Result is true when there is a next page, false when there is not.</p>
+</p>
+                    </div>
+                    
+
+                    
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-function-name">
+                        hasPreviousPage Check whether there is a previous page.()
+                        
+                        
+                    </h3>
+
+                    <p></p>
+
+                    
+                    <div class="docs-function-returns">
+                        <h4>
+                            Returns <span class="type-hint type-hint-boolean">Boolean</span>
+                        </h4>
+                        <p><p>Result is true when there is a previous page, false when there is not.</p>
+</p>
+                    </div>
+                    
+
+                    
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-function-name">
+                        getNextPage()
+                        
+                        
+                    </h3>
+
+                    <p></p>
+
+                    
+                    <div class="docs-function-returns">
+                        <h4>
+                            Returns <span class="type-hint type-hint-promise">Promise</span>
+                        </h4>
+                        <p><p>Promise that resolves with a new <code>ModelCollection</code> containing the next page&#39;s data. Or rejects with
+a string when there is no next page for this collection or when the request for the next page failed.</p>
+</p>
+                    </div>
+                    
+
+                    
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-function-name">
+                        getPreviousPage()
+                        
+                        
+                    </h3>
+
+                    <p></p>
+
+                    
+                    <div class="docs-function-returns">
+                        <h4>
+                            Returns <span class="type-hint type-hint-promise">Promise</span>
+                        </h4>
+                        <p><p>Promise that resolves with a new <code>ModelCollection</code> containing the previous page&#39;s data. Or rejects with
+a string when there is no previous page for this collection or when the request for the previous page failed.</p>
+</p>
+                    </div>
+                    
+
+                    
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-function-name">
+                        goToPage(<span class="doc-function-parameter-wrap">pageNr <span class="type-hint type-hint-number">Number</span></span>)
+                        
+                        
+                    </h3>
+
+                    <p></p>
+
+                    
+                    <div class="docs-function-returns">
+                        <h4>
+                            Returns <span class="type-hint type-hint-promise">Promise</span>
+                        </h4>
+                        <p><p>Promise that resolves with a new <code>ModelCollection</code> containing the data for the requested page.</p>
+</p>
+                    </div>
+                    
+
+                    
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+    </md-list>
+    </div>
+    
+
+    
+    <div class="content-block md-whiteframe-z1">
+    <md-toolbar class="md-theme-light">
+        <h2 class="md-toolbar-tools">
+            <span>Properties</span>
+        </h2>
+    </md-toolbar>
+    <md-list>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-property-name">page <span class="type-hint type-hint-number">number</span></h3>
+
+                    <p><p>Current page number</p>
+</p>
+                    <p></p>
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-property-name">pageCount <span class="type-hint type-hint-number">number</span></h3>
+
+                    <p><p>The total number of pages available</p>
+</p>
+                    <p></p>
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-property-name">total <span class="type-hint type-hint-number">number</span></h3>
+
+                    <p><p>The total number of items available.</p>
+</p>
+                    <p><p>This represents the total number of items available in the system. Note it is not the number of items
+on the current page.</p>
+</p>
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-property-name">nextPage <span class="type-hint type-hint-string">string</span></h3>
+
+                    <p><p>The url to the next page.</p>
+</p>
+                    <p><p>If there is no next page then this will be undefined.</p>
+</p>
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-property-name">prevPage <span class="type-hint type-hint-string">string</span></h3>
+
+                    <p><p>The url to the previous page</p>
+</p>
+                    <p><p>If there is no previous page then this will be undefined.</p>
+</p>
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+    </md-list>
+    </div>
+    
+</div>
+
+    </md-content>
+</body>
