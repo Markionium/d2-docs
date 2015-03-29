@@ -1,5 +1,5 @@
 <body>
-    <md-toolbar md-scroll-shrink md-shrink-speed-factor="0.75" class="md-tall md-accent content-header md-whiteframe-z1">
+    <md-toolbar md-scroll-shrink md-shrink-speed-factor="0.75" class="md-tall content-header md-whiteframe-z1">
         <md-icon ng-show="app.showMenuButton()" ng-click="app.showMenu()" class="menu-icon" md-font-icon="fa fa-bars"></md-icon>
         
 <h1>ModelBase</h1>
@@ -31,7 +31,7 @@
                     </h3>
 
                     <p><p>Checks if the model is dirty. When the model is dirty it will check if the values of the model are valid by calling
-<code>validate</code>. If this is correct it will attempt to save the Model to the api.</p>
+<code>validate</code>. If this is correct it will attempt to save the <a href="#/model/Model">Model</a> to the api.</p>
 <pre><code class="lang-js">myModel.save()
 .then((message) =&gt; console.log(message));
 </code></pre>
