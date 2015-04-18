@@ -162,6 +162,8 @@ returned from the server.</p>
                     <p><p>This method returns a list of property names that that are defined
 as &quot;owner&quot; properties on this schema. This means these properties are used
 when saving the model to the server.</p>
+<pre><code class="lang-js">dataElement.getOwnedPropertyNames()
+</code></pre>
 </p>
 
                     
@@ -170,6 +172,39 @@ when saving the model to the server.</p>
                             Returns <span class="type-hint type-hint-string">String[]</span>
                         </h4>
                         <p><p>Returns an array of property names.</p>
+</p>
+                    </div>
+                    
+
+                    
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-function-name">
+                        createFromSchema()
+                         <span class="docs-function-static">static</span>
+                        
+                    </h3>
+
+                    <p><p>This method creates a new <code>ModelDefinition</code> based on a JSON structure called
+a schema. A schema represents the structure of a domain model as it is
+required by DHIS. Since these schemas can not be altered on the server from
+the modelDefinition is frozen to prevent accidental changes to the definition.</p>
+<pre><code class="lang-js">ModelDefinition.createFromSchema(schemaDefinition);
+</code></pre>
+</p>
+
+                    
+                    <div class="docs-function-returns">
+                        <h4>
+                            Returns <span class="type-hint type-hint-modeldefinition">ModelDefinition</span>
+                        </h4>
+                        <p><p>Frozen model definition object.</p>
 </p>
                     </div>
                     
