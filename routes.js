@@ -46,6 +46,12 @@ angular.module('d2Docs')
                 controllerAs: 'page'
             })
             /**/
+            .when('/model/ModelDefinitions', {
+                templateUrl: 'model/ModelDefinitions.html',
+                controller: 'pageController',
+                controllerAs: 'page'
+            })
+            /**/
             /**/
             .when('/pager', {
                 templateUrl: 'pager.html',
