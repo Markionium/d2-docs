@@ -37,6 +37,8 @@ data will be loaded into the matching properties of the model.</p>
 </p>
 
                     
+
+                    
                     <div class="docs-function-returns">
                         <h4>
                             Returns <span class="type-hint type-hint-model">Model</span>
@@ -69,6 +71,8 @@ dataElement.get(&#39;d2sf33s3ssf&#39;)
   .then(model =&gt; console.log(model.name));
 </code></pre>
 </p>
+
+                    
 
                     
                     <div class="docs-function-returns">
@@ -105,6 +109,8 @@ dataElement.list()
 </p>
 
                     
+
+                    
                     <div class="docs-function-returns">
                         <h4>
                             Returns <span class="type-hint type-hint-modelcollection">ModelCollection</span>
@@ -131,6 +137,12 @@ dataElement.list()
 
                     <p><p>This method is used by the <code>Model</code> instances to save the model when calling <code>model.save()</code>.</p>
 </p>
+
+                    
+                    <div class="level-warning">
+                        This should generally not be accessed directly.
+                    </div>
+                    
 
                     
                     <div class="docs-function-returns">
@@ -167,6 +179,8 @@ when saving the model to the server.</p>
 </p>
 
                     
+
+                    
                     <div class="docs-function-returns">
                         <h4>
                             Returns <span class="type-hint type-hint-string">String[]</span>
@@ -198,6 +212,13 @@ the modelDefinition is frozen to prevent accidental changes to the definition.</
 <pre><code class="lang-js">ModelDefinition.createFromSchema(schemaDefinition);
 </code></pre>
 </p>
+
+                    
+                    <div class="level-info">
+                        An example of a schema definition can be found on
+https://apps.dhis2.org/demo/api/schemas/dataElement
+                    </div>
+                    
 
                     
                     <div class="docs-function-returns">

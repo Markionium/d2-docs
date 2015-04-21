@@ -40,6 +40,8 @@
                     
 
                     
+
+                    
                 </div>
             </md-item-content>
             <md-divider ng-if="!$last"></md-divider>
@@ -58,6 +60,17 @@
 <pre><code class="lang-js">models.mapThroughDefinitions(definition =&gt; console.log(definition.name);
 </code></pre>
 </p>
+
+                    
+                    <div class="level-info">
+                        When mapping through the definition list `transformer` is called with the just the definition
+Unlike other map functions, no index or the full object is being passed.
+                    </div>
+                    
+                    <div class="level-warn">
+                        The resulting array contains references to the actual objects. It does not work like immutable array functions.
+                    </div>
+                    
 
                     
                     <div class="docs-function-returns">
