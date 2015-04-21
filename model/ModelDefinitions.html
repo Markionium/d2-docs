@@ -1,0 +1,86 @@
+<body>
+    <md-toolbar md-scroll-shrink md-shrink-speed-factor="0.75" class="md-tall content-header md-whiteframe-z1">
+        <md-icon ng-show="app.showMenuButton()" ng-click="app.showMenu()" class="menu-icon" md-font-icon="fa fa-bars"></md-icon>
+        
+<h1>ModelDefinitions</h1>
+
+<span class="doc-module-name">model/ModelDefinitions</span>
+
+    </md-toolbar>
+    <md-content>
+        
+<div>
+    
+
+    
+    <div class="content-block md-whiteframe-z1">
+    <md-toolbar class="md-theme-light">
+        <h2 class="md-toolbar-tools">
+            <span>Methods</span>
+        </h2>
+    </md-toolbar>
+    <md-list>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-function-name">
+                        add(<span class="doc-function-parameter-wrap">modelDefinition <span class="type-hint type-hint-modeldefinition">ModelDefinition</span></span>)
+                        
+                        
+                    </h3>
+
+                    <p><p>This will allow you to add your own custom ModelDefinitions.</p>
+<p>The Definition object should have the following properties
+<code>modelName, modelNamePlural, modelOptions, properties, validations</code></p>
+<pre><code class="lang-js">models.add({name: &#39;MyDefinition&#39;, plural: &#39;MyDefinitions&#39;, endPointname: &#39;/myDefinition&#39;});
+</code></pre>
+</p>
+
+                    
+
+                    
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+        <md-item>
+            <md-item-content>
+                <div class="md-tile-content">
+                    <h3 class="docs-function-name">
+                        mapThroughDefinitions(<span class="doc-function-parameter-wrap">transformer <span class="type-hint type-hint-function">Function</span></span>)
+                        
+                        
+                    </h3>
+
+                    <p><p>Map through the modelDefinitions like you would with a simple <code>Array.map()</code></p>
+<pre><code class="lang-js">models.mapThroughDefinitions(definition =&gt; console.log(definition.name);
+</code></pre>
+</p>
+
+                    
+                    <div class="docs-function-returns">
+                        <h4>
+                            Returns <span class="type-hint type-hint-array">Array</span>
+                        </h4>
+                        <p><p>Array with the <code>ModelDefinition</code> objects.</p>
+</p>
+                    </div>
+                    
+
+                    
+                </div>
+            </md-item-content>
+            <md-divider ng-if="!$last"></md-divider>
+        </md-item>
+        
+    </md-list>
+    </div>
+    
+
+    
+</div>
+
+    </md-content>
+</body>
