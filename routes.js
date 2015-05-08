@@ -3,6 +3,32 @@ angular.module('d2Docs')
     .config(function ($routeProvider) {
         $routeProvider
             /**/
+            .when('/examples', {
+                templateUrl: 'examples.html',
+                controller: 'sectionController',
+                controllerAs: 'section'
+            })
+            /**/
+            .when('/examples/Basic usage', {
+                templateUrl: 'examples/basic_usage.html',
+                controller: 'pageController',
+                controllerAs: 'page'
+            })
+            /**/
+            /**/
+            .when('/general', {
+                templateUrl: 'general.html',
+                controller: 'sectionController',
+                controllerAs: 'section'
+            })
+            /**/
+            .when('/general/Install', {
+                templateUrl: 'general/install.html',
+                controller: 'pageController',
+                controllerAs: 'page'
+            })
+            /**/
+            /**/
             .when('/d2', {
                 templateUrl: 'd2.html',
                 controller: 'sectionController',
