@@ -83,5 +83,20 @@
         </md-list>
     </menu-section>
     
+    <menu-section class="menu-section" section-name="system">
+        <ul>
+            
+            <li ng-class="{active: app.isActiveRoute('/system/System')}">
+                <a md-button class="md-button md-default-theme" href="#/system/System">System</a>
+            </li>
+            
+            <li ng-class="{active: app.isActiveRoute('/system/SystemSettings')}">
+                <a md-button class="md-button md-default-theme" href="#/system/SystemSettings">SystemSettings</a>
+            </li>
+            
+        </ul>
+        </md-list>
+    </menu-section>
+    
 </md-content>
 </body>

@@ -98,6 +98,25 @@ angular.module('d2Docs')
             })
             /**/
             /**/
+            .when('/system', {
+                templateUrl: 'system.html',
+                controller: 'sectionController',
+                controllerAs: 'section'
+            })
+            /**/
+            .when('/system/System', {
+                templateUrl: 'system/System.html',
+                controller: 'pageController',
+                controllerAs: 'page'
+            })
+            /**/
+            .when('/system/SystemSettings', {
+                templateUrl: 'system/SystemSettings.html',
+                controller: 'pageController',
+                controllerAs: 'page'
+            })
+            /**/
+            /**/
             ;
     });
 
